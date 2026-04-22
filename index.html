@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Distance Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <h1><i class="fas fa-ruler"></i> Distance Converter</h1> -->
+     <script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+        <h1><img src="dis_logo/logo.jpg" alt="" height="70px" ></h1>
+    <h1> Maap  ⚖️ Sutra</h1>
+
+    <div class="input-group">
+        <input type="number" id="inputValue" placeholder="Enter value">
+    </div>
+
+    <div class="dropdowns">
+        <select id="fromUnit">
+            <option value="meter">Meter</option>
+            <option value="km">Kilometer</option>
+            <option value="cm">Centimeter</option>
+            <option value="mm">Millimeter</option>
+        </select>
+
+        <span>➡</span>
+
+        <select id="toUnit">
+            <option value="km">Kilometer</option>
+            <option value="meter">Meter</option>
+            <option value="cm">Centimeter</option>
+            <option value="mm">Millimeter</option>
+        </select>
+    </div>
+
+    <button onclick="convert()">Convert</button>
+    <button onclick="swapUnits()">🔄</button>
+    <i class="fas fa-ruler"></i>
+
+    <div class="result-box">
+        <h2 id="result">Result: --</h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html> 
